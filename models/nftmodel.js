@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const tokenSchema=new mongoose.Schema({
+const nftSchema=new mongoose.Schema({
     userId:{
          type:String
       },   
@@ -15,26 +15,18 @@ const tokenSchema=new mongoose.Schema({
     status:{
         type:String
     },
-     da:{
+    data:{
         token:{
-            count:{
-                type:String
-            },
+            type:String
+        },
         nft:{
-            address:{
+            contractaddress:{
                 type:String
             },
             tokenId:{
-                type:String
-            },
-            count:{
-                type:String
+              type:String
             }
-
-        },
-        },
-
-
+        }
 
     },
     address:{
@@ -42,4 +34,4 @@ const tokenSchema=new mongoose.Schema({
     }
 },{timestamps:true,versionKey: false })
 
-module.exports =mongoose.model("token",tokenSchema);
+module.exports =mongoose.model("nft",nftSchema);

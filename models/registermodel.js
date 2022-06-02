@@ -15,7 +15,7 @@ const registerSchema=new mongoose.Schema({
         type:String
     },
     address:{
-        type:mongoose.Types.ObjectId,
+        type:mongoose.Schema.Types.ObjectId,
         ref:"wallet"
     }
 
