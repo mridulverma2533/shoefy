@@ -5,7 +5,7 @@ const walletSchema=new mongoose.Schema({
     wallet:{
         ingametoken:{
             type:String,
-            // default:0
+            default:0
         },
         nft:[
             {
@@ -26,6 +26,10 @@ const walletSchema=new mongoose.Schema({
     ]
 
 
+    },
+    userId:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"register"
     }
 
 

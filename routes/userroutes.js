@@ -10,6 +10,7 @@ router.post("/login",controller.login);
 router.post("/addwallet",controller.wallet)
 router.get("/findwallet",controller.find)
 router.post("/addtoken",auth,controller.addhash)
+router.post("/addnft",controller.nfttable)
 
 
 

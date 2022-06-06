@@ -14,10 +14,10 @@ const registerSchema=new mongoose.Schema({
     password:{
         type:String
     },
-    address:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:"wallet"
-    }
+    // data:{
+    //     type:mongoose.Schema.Types.ObjectId,
+    //     ref:"wallet"
+    // }
 
 
 },{timestamps:true,versionKey: false })

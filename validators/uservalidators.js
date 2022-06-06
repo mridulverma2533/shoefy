@@ -10,7 +10,7 @@ exports.validateSinginRequest=[
     .withMessage({status:103,message:"invalid email"}),
     check('password')
     .isLength({min:6})
-    .withMessage("password must be atleast 6 character long")
+    .withMessage({status:104,message:"password not be greater than 6 character"})
 ];
 
 exports.isRequestValidated=(req,res,next)=>{

@@ -21,7 +21,7 @@ const tokenSchema=new mongoose.Schema({
                 type:String
             },
         nft:{
-            address:{
+            contractaddress:{
                 type:String
             },
             tokenId:{
@@ -31,12 +31,13 @@ const tokenSchema=new mongoose.Schema({
                 type:String
             }
 
-        },
-        },
+        }
+        }
 
 
 
     },
+
     address:{
         type:String
     }

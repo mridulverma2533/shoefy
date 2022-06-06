@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
  mongoose.set('debug', true);
 
-mongoose.connect("mongodb+srv://MridulKumar:goldenfish@cluster0.r7sw3.mongodb.net/?retryWrites=true&w=majority",{
+mongoose.connect("mongodb://127.0.0.1:27017/shoefy",{
     
     useNewUrlParser:true,
 
